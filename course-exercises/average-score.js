@@ -1,21 +1,22 @@
-// Exercise: Enter the tests scores and show their average.
+/** Exercise: Enter the tests scores and show their average.
 
-let score = null;
-let sumScore = null;
-let counter = null;
+* @param {array} scores - List of the scores
+* @returns {number} - Average score of the array
 
-// Create a loop that asks for the grades and then sums them.
-while (score != -1) {
-  score = parseFloat(prompt("Enter the scores"));
-  if (score > 10 || score < -1 || isNaN(score) == true) {
-    alert("Enter a valid score");
-  } else if (score != -1) {
-    sumScore += score;
-    counter += 1;
-  } else {
-    score = 0;
-    break;
+*/
+function averageTestScore(scores) {
+  let sumScore = 0;
+  let counter = 0;
+
+  // Create a loop that asks for the grades and then sums them.
+  for (let number of scores) {
+    if (number > 10 || number <= -1 || isNaN(number)) {
+      return null;
+    } else {
+      sumScore += number;
+    }
   }
+  let averageScore = sumScore / scores.length;
+  return averageScore;
 }
-let averageScore = sumScore / counter;
-alert(`Your average is ${averageScore}`);
+module.exports = averageTestScore;
