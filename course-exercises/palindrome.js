@@ -1,17 +1,17 @@
-// Exercise: Create a program that checks if it is a palindrome or not.
-function palindrome(word) {
-  //let word = word.toLowerCase();
-  let counter = 0;
-  let length = word.length;
+/**  Exercise: Create a program that checks if it is a palindrome or not.
 
-  // Reduce the length of words that are not even.
-  if (length % 2 != 0) {
-    length--;
-  }
+*@param {string} word - Word
+*@returns {string} - Is a palindrome or not
+
+*/
+function palindrome(word) {
+  word = word.toLowerCase();
+  let length = word.length;
+  let counter = 0;
 
   //Checks if the first and last letter are the same.
   for (i = 0; i < length / 2; i++) {
-    if (word[i] == word[length - i]) {
+    if (word[i] == word[length - 1 - i]) {
       counter++;
     }
   }
@@ -21,6 +21,4 @@ function palindrome(word) {
     console.log("It is not a palindrome.");
   }
 }
-
-// Test
-console.log(palindrome("RADAR"));
+module.exports = palindrome;
