@@ -1,22 +1,23 @@
-// Exercise: Create a program that find the highest and lowest value in the array.
+/**  Exercise: Create a program that find the highest and lowest value in the array.
 
-let arrayLength = Number(prompt("Enter the array length"));
-let array = [];
-let highest = array[0];
-let lowest = array[0];
+*@param {array} numArray - Array of numbers 
+*@returns{object} - Object with the highest and lowest values
 
-// Enter the number and add it in the array
-for (i = 0; i < arrayLength; i++) {
-  let num = Number(prompt("Enter the number."));
-  array.push(num);
+*/
 
-// Checks if the added number is higher or lower than the previous number
-  if (highest > array[i]) {
-    highest = array[i];
-  } else if (lowest < array[i]) {
-    lowest = array[i];
-  } else {
-    continue;
+function highLow(numArray) {
+  let highest = numArray[0];
+  let lowest = numArray[0];
+
+  for (let i in numArray) {
+    if (highest < numArray[i]) {
+      highest = numArray[i];
+    } else if (lowest > numArray[i]) {
+      lowest = numArray[i];
+    } else {
+      continue;
+    }
   }
+  return { Highest: highest, Lowest: lowest };
 }
-alert(`The highest value is ${highest} and the lowest is ${lowest}.`);
+module.exports = highLow;
