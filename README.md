@@ -1,7 +1,7 @@
 # About
 I'm a Systems Development student at SENAI/SC. The codes in this repository are exercises I completed in class, with the objective of showcasing my improvement throughout the course. There are better ways to solve these problems, such as declaring variables together in one line or creating functions to make the code more organized. However, my intention is to track how much I improve over time.
 
-Curriculum:
+**Curriculum:**
 
 **First Semester**
 - Fundamentals of Applied Electronics
