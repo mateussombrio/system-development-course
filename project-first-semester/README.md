@@ -1,0 +1,1 @@
+This is the final project of the first semester. The idea is to create an e-commerce website using HTML, CSS, and JavaScript, without any frameworks—just pure CSS and JS.s
