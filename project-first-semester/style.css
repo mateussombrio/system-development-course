@@ -1,7 +1,40 @@
-#id_header{
-    background-color: black;
+body {
+  margin: 0;
+  background-color: #353839;
 }
-#id_search{
-    background-color:aquamarine;
-    
+
+
+header {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+#id_search {
+  background-color: #fffafa;
+  border-radius: 5px;
+  height: 30px;
+  width: 500px;
+}
+
+.class_icon {
+  width: 20px;
+  height: 20px;
+  fill: #fffafa;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.class_cards{
+width: 20px;
+height: 20px;
+}
+
+.div_cards{
+
 }
