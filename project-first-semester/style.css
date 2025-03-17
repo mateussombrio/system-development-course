@@ -43,9 +43,8 @@ header {
 }
 
 .img_cards {
-  width: 150px;
-  height: 150px;
-
+  width: 180px;
+  height: 180px;
 }
 
 .div_cards {
@@ -55,7 +54,11 @@ header {
   height: 500px;
 }
 
-.class_div_img_card{
-    justify-content: center;
-    display: flex;
+.class_div_img_card {
+  justify-content: center;
+  display: flex;
+}
+
+.class_buttom {
+    
 }
