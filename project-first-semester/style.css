@@ -3,7 +3,6 @@ body {
   background-color: #353839;
 }
 
-
 header {
   flex-direction: row;
   display: flex;
@@ -30,11 +29,33 @@ header {
   padding-right: 10px;
 }
 
-.class_cards{
-width: 20px;
-height: 20px;
+.class_cards {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 2px;
+  margin: 40px;
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.div_cards{
+.img_cards {
+  width: 150px;
+  height: 150px;
 
+}
+
+.div_cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+}
+
+.class_div_img_card{
+    justify-content: center;
+    display: flex;
 }
