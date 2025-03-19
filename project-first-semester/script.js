@@ -52,16 +52,20 @@ for (i = 0; i < cardsData.length; i++) {
   img.classList.add("img_cards");
   img.src = cardsData[i].image;
   img.alt = cardsData[i].title;
+
   // H3 element
   const h3 = document.createElement("h3");
   h3.textContent = cardsData[i].title;
+
   // Price element
   const price = document.createElement("p");
+  price.classList.add('class_price')
   price.textContent = cardsData[i].price;
   // Buttom element
   const buttom_card = document.createElement("button");
   buttom_card.classList.add("class_buttom");
   buttom_card.textContent = "Buy Now";
+  buttom_card.addEventListener('click', () => window.location.href = '../project-first-semester/shopping-cart.html')
 
   cards.appendChild(div_img_card);
   div_img_card.appendChild(img);
@@ -71,3 +75,4 @@ for (i = 0; i < cardsData.length; i++) {
 
   div_cards.appendChild(cards);
 }
+
